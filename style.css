@@ -9,12 +9,14 @@ header {
 	gap: 10px; /* Optional: space between grid items */
 }
 
-header img#logo {
-	height: 100px; /* Ensure logo scales with the header */
+img#logo {
+	height: 10vw; /* Ensure logo scales with the header */
 	width: auto; /* Maintain aspect ratio */
 	float: left;
 }
-.mynav {text-decoration: none; color: white; padding-right: 20px;}
+
+.title {font-size: 5vw}
+.mynav {font-size: 2vw; text-decoration: none; color: white; padding-right: 20px;}
 .mynav:visited {color: white}
 .mynav:hover {color: gold}
 
