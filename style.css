@@ -9,6 +9,7 @@ header {
 	gap: 10px; /* Optional: space between grid items */
 }
 
+
 img#logo {
 	height: 10vw; /* Ensure logo scales with the header */
 	width: auto; /* Maintain aspect ratio */
