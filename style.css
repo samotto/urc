@@ -27,6 +27,11 @@ img#logo {
 	}
 }
 
+#mynav {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
 #my-container {
 	padding-left:1px;
 }
@@ -41,4 +46,5 @@ img#logo {
 
 iframe {
 	flex-grow: 1;
+	padding: 20px 0px 20px 20px
 }
