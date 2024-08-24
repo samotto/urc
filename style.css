@@ -11,15 +11,15 @@ header {
 
 
 img#logo {
-	height: 10vw; /* Ensure logo scales with the header */
+	height: 100px; /* Ensure logo scales with the header */
 	width: auto; /* Maintain aspect ratio */
 	float: left;
 }
 
-.title {font-size: 5vw}
-.mynav {font-size: 2vw; text-decoration: none; color: white; padding-right: 20px;}
-.mynav:visited {color: white}
-.mynav:hover {color: gold}
+.title {font-size: 50px}
+#my-container {
+	padding-left:1px;
+}
 
 .navbar-toggler {
 	border-color: white; /* Optional: Makes the border of the toggle button white */

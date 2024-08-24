@@ -8,25 +8,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container-fluid d-flex flex-column vh-100">
+   <div id="my-container" class="container-fluid d-flex flex-column">
 		<header class="row align-items-center">
-			<div>
-					<img src="logo.jpg" alt="Urban Redemption Chicago Logo" id="logo" class="img-fluid" style="margin-right:5px">
-					<div class="title">Urban Redemption Chicago</div>
-					<div style="white-space: nowrap;">
-						<a class="mynav" href="home.html" target="content-frame">Home</a>
-						<a class="mynav" href="mission.html" target="content-frame">Mission</a>
-						<a class="mynav" href="details.html" target="content-frame">Method</a>
-						<a class="mynav" href="pics.html" target="content-frame">Media</a>
-						<a class="mynav" href="donate.html" target="content-frame">Donate</a>
-						<a class="mynav" href="contact.html" target="content-frame">Contact</a>
-					</div>	
-			</div>			
+			<!-- Navigation Bar -->
+			<nav id="mynav" class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<!-- Brand/Logo -->
+					<a class="navbar-brand" href="#">
+						<img src="logo.jpg" alt="Urban Redemption Chicago Logo" id="logo" class="img-fluid">
+					</a>
+					<div class="display-5">Urban Redemption Chicago</div>
+					<!-- Hamburger Menu Icon -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navigation Links -->
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="nav-link active link-light aria-current="page"  href="home.html" target="content-frame">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link link-light" href="mission.html" target="content-frame">Mission</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link link-light" href="details.html" target="content-frame">Method</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link link-light" href="media.html" target="content-frame">Media</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link link-light" href="donate.html" target="content-frame">Donate</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link link-light" href="contact.html" target="content-frame">Contact</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<iframe name="content-frame" class="flex-grow-1" frameborder="0" src="home.html"></iframe>
    </div>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>	 <script src="include.js"></script>
 	<script src="include.js"></script>
+	<!-- Custom Script to Collapse Navbar -->
+	<script>
+		// Ensure that the navbar collapses when a link is clicked
+		document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+				link.addEventListener('click', function() {
+					const navbarToggler = document.querySelector('.navbar-toggler');
+					const navbarCollapse = document.querySelector('#navbarNav');
+
+					if (navbarCollapse.classList.contains('show')) {
+						navbarToggler.click();
+					}
+				});
+		});
+	</script>
+
 </body>
 </html>
