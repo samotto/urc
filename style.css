@@ -44,6 +44,35 @@ img#logo {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+h2 { font-style:italic;}
+
+.subtitle {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.box {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 3px;
+	border-radius: 15px;
+	width: 50%;
+	xxpadding: 10px;
+	xxbox-sizing: border-box; /* Include padding in width calculation */
+}
+
+.icon {
+	width:2em;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.clickable:hover {
+	color: blue;
+}
+
 iframe {
 	flex-grow: 1;
 	padding: 20px 0px 20px 20px
